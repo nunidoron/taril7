@@ -1,3 +1,4 @@
+properties([pipelineTriggers([pollSCM('* * * * *')])])
 node{
     stage("1"){
         git branch: 'master', url: 'https://github.com/nunidoron/taril7.git'
